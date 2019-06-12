@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>My Heart BEat ! :: elanozturk.tk</title>
+    <meta name="author" content="elanozturk">
+    <link rel="shortcut icon" href="ico/favicon.gif">
+</head>
+<body>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-90364913-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <audio controls autoplay loop id="myaudio" hidden="true">
+  <source src="./mp3/lazer1.mp3" type="audio/mpeg">
+  </audio>
+  <script>
+   var audio = document.getElementById("myaudio");
+   audio.volume = 0.5;
+  </script>
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.11.2.min.js"></script>
+<span style="float:right; width:25em">
+<a href="./index.html"style="color:#3575d3; font-size: 25px">home</a>
+<a href="./messageme.html"style="color:#7D8C93; font-size: 25px">message me</a>
+<a href="./ssh.html"style="color:#2aa198; font-size: 25px">web ssh</a>
+</span>
+<script>
+    $(function() {
+        var styles =
+        "/*                                  \n" +
+        " * Hi ! It's me again, elanozturk.  \n" +
+        " * I'm just sitting here and        \n" +
+        " * coding away.                     \n" +
+        " *                                  \n" +
+        " * Sure, you can watch me           \n" +
+        " * and learn somethings.            \n" +
+        " */                                 \n" +
+        "                                    \n" +
+        "{                                   \n" +
+        "  -webkit-transition: all 1s;       \n" +
+        "  -moz-transition: all 1s;          \n" +
+        "}                                 \n\n" +
+        "body {                              \n" +
+        "  background-color: #00232c;        \n" +
+        "}                                 \n\n" +
+        "pre,a {                             \n" +
+        "  color: #2aa198;                   \n" +
+        "}                                 \n\n" +
+        "pre {                            \n" +
+        "  overflow: auto;                \n" +
+        "  font-size: 20px;               \n" +
+        "  position: fixed; width: 50%;   \n" +
+        "  top: 30px; bottom: 30px; left: 26%;         \n" +
+        "  transition: left 500ms;                     \n" +
+        "  background-color: #002B36;color: #DC3130;\n" +
+        "  border: 1px solid rgba(0,0,0,0.2);       \n" +
+        "  padding: 24px 12px;                      \n" +
+        "  box-sizing: border-box;   \n" +
+        "  border-radius: 3px;       \n" +
+        "  box-shadow: 0px 4px 0px 2px rgba(0,0,0,0.1);  \n" +
+        "}  \n\n\n" +
+        "/*     \n" +
+        " * Syntax highlighting                \n" +
+        " * Colors based on Solarized Dark  \n" +
+        " */                                   \n\n" +
+        "pre em:not(.comment) { font-style: normal; }  \n\n" +
+        ".comment       { color: #1192FF; }              \n" +
+        ".selector      { color: #B58900; }              \n" +
+        ".key           { color: #2AA198; }              \n" +
+        ".selector .key { color: #E519C0; }              \n" +
+        ".value         { color: #EE5A0B; }          \n\n\n" +
+        "                                                \n" +
+        "/* Let's build my little pen heart. */        \n\n" +
+        "                                                \n" +
+        "/* First, we'll move this shit over */        \n\n" +
+        "pre { left: 50%; }                          \n\n\n" +
+        "/* Now we can build my heart */               \n\n" +
+        "#heart, #echo {                                 \n" +
+        "  position: fixed;                              \n" +
+        "  width: 300px; height: 300px;                  \n" +
+        "  top: calc(50% - 150px); left: calc(25% - 150px);  \n" +
+        "  text-align: center;                               \n" +
+        "  -webkit-transform: scale(0.95);                   \n" +
+        "          transform: scale(0.95);                   \n" +
+        "}                       \n\n" +
+        "#heart { z-index: 8; }    \n" +
+        "#echo  { z-index: 7; }  \n\n" +
+        "#heart::before, #heart::after, #echo::before, #echo::after {\n" +
+        "    content: '';\n" +
+        "    position: absolute;\n" +
+        "    top: 40px;\n" +
+        "    width: 150px; height: 240px;\n" +
+        "    background: #e51957 ;\n" +
+        "    border-radius: 150px 150px 0 0;\n" +
+        "    -webkit-transform: rotate(-45deg);\n" +
+        "            transform: rotate(-45deg);\n" +
+        "    -webkit-transform-origin: 0 100%;\n" +
+        "            transform-origin: 0 100%;\n" +
+        "}\n\n" +
+        "#heart::before, #echo::before {\n" +
+        "  left: 150px;\n" +
+        "}\n\n" +
+        "#heart::after, #echo::after {\n" +
+        "  left: 0;\n" +
+        "  -webkit-transform: rotate(45deg);\n" +
+        "          transform: rotate(45deg);\n" +
+        "  -webkit-transform-origin: 100% 100%;\n" +
+        "          transform-origin: 100% 100%;\n" +
+        "}\n\n\n" +
+        "/* It needs some depth  */\n\n" +
+        "#heart::after { \n" +
+        "  box-shadow:\n" +
+        "    inset -6px -6px 0px 6px rgba(255,255,255,0.1);\n" +
+        "}\n\n" +
+        "#heart::before { \n" +
+        "  box-shadow:\n" +
+        "    inset 6px 6px 0px 6px rgba(255,255,255,0.1);\n" +
+        "}\n\n\n" +
+        "/* Makin it mine. */\n\n" +
+        "#heart i::before {\n" +
+        "  content: 'elanozturk';\n" +
+        "  position: absolute;\n" +
+        "  z-index: 9;\n" +
+        "  width: 100%;\n" +
+        "  top: 35%; left: 0;\n" +
+        "  font-style: normal;\n" +
+        "  color: rgba(249, 247, 243, 1);\n" +
+        "  font-weight: 100;\n" +
+        "  font-size: 40px;\n" +
+        "  text-shadow: -1px -1px 0px rgba(0,0,0,0.3);\n" +
+        "}\n\n\n" +
+        " * Hearts gotta beat,right? \n" +
+        " */\n\n" +
+        "@-webkit-keyframes heartbeat {\n" +
+        "  0%, 100% { \n" +
+        "    -webkit-transform: scale(0.95); \n" +
+        "            transform: scale(0.95); \n" +
+        "  }\n" +
+        "  50% { \n" +
+        "    -webkit-transform: scale(1.00); \n" +
+        "            transform: scale(1.00); \n" +
+        "  }\n}\n\n" +
+        "@keyframes heartbeat {\n" +
+        "  0%, 100% { transform: scale(0.95); }\n" +
+        "  50%      { transform: scale(1.00); }\n" +
+        "}\n\n" +
+        "@-webkit-keyframes echo {\n" +
+        "  0%   { \n" +
+        "    opacity: 0.1;\n" +
+        "    -webkit-transform: scale(1);\n" +
+        "            transform: scale(1);\n" +
+        "  }\n" +
+        "  100% { \n" +
+        "    opacity: 0;\n" +
+        "    -webkit-transform: scale(1.4);\n" +
+        "            transform: scale(1.4);\n" +
+        "  }\n" +
+        "}\n\n" +
+        "@keyframes echo {\n" +
+        "  0%   { \n" +
+        "    opacity: 0.1;\n" +
+        "    transform: scale(1);\n" +
+        "  }\n" +
+        "  100% { \n" +
+        "    opacity: 0;\n" +
+        "    transform: scale(1.4);\n" +
+        "  }\n" +
+        "}\n\n\n" +
+        "/* \n" +
+        " * Beautiful! Now for the beating...\n" +
+        " */\n\n" +
+        "#heart, #echo {\n" +
+        "  -webkit-animation-duration: 2000ms;\n" +
+        "          animation-duration: 2000ms;\n" +
+        "  -webkit-animation-timing-function: \n" +
+        "    cubic-bezier(0, 0, 0, 1.74);\n" +
+        "          animation-timing-function: \n" +
+        "    cubic-bezier(0, 0, 0, 1.74); \n" +
+        "  -webkit-animation-delay: 500ms;\n" +
+        "          animation-delay: 500ms;\n" +
+        "  -webkit-animation-iteration-count: infinite;\n" +
+        "          animation-iteration-count: infinite;\n" +
+        "  -webkit-animation-play-state: paused;\n" +
+        "          animation-play-state: paused;\n" +
+        "}\n\n" +
+        "#heart { \n" +
+        "  -webkit-animation-name: heartbeat; \n" +
+        "          animation-name: heartbeat; \n" +
+        "}\n" +
+        "#echo { \n" +
+        "  -webkit-animation-name: echo; \n" +
+        "          animation-name: echo; \n" +
+        "}\n\n\n" +
+        "/* \n" +
+        " * Ready...           \n" +
+        " */\n\n" +
+        "#heart, #echo {\n\n" +
+        "/* \n" +
+        " * ...set...          \n" +
+        " */\n  \n" +
+        "  -webkit-animation-play-state: running;\n" +
+        "          animation-play-state: running;\n" +
+        "  \n/* \n" +
+        " * ...beat!        \n" +
+        " */\n  \n" +
+        "}\n\n" +
+        "/* \n" +
+        " *\n" +
+        " * Wahoo!         \n" +
+        " *\n" +
+        " * We did it!       \n" +
+        " *\n" +
+        " * I mean *I* did it, but you know, whatever...\n" +
+        " * \n" +
+        " * See you later!\n" +
+        " *  \n" +
+        " */";
+        var openComment = false, wait=true, time,text="", writeTextChar, writeStyleChar, writeStyles, writeTexts,len = styles.length, pre;
+
+        function replaceKeyword(e){
+
+            return e.replace(new RegExp("<style>","g"),"&lt;style&gt;").replace(new RegExp("<pre>","g"),"&lt;pre&gt;")
+        }
+
+        writeTextChar = function (which){
+            if (which === '/' && openComment === false) {
+                openComment = true;
+                text = text + which;
+            } else if (which === '/' && openComment === true) {
+                openComment = false;
+                text = text.replace(/(\/[^\/]*\*)$/, '<em class="comment">$1/</em>');
+            } else if (which === ':') {
+                text = text.replace(/([a-zA-Z- ^\n]*)$/, '<em class="key">$1</em>:');
+            } else if (which === ';') {
+                text = text.replace(/([^:]*)$/, '<em class="value">$1</em>;');
+            } else if (which === '{') {
+                text = text.replace(/(.*)$/, '<em class="selector">$1</em>{');
+            } else {
+                text = text + which ;
+                text = replaceKeyword(text);
+            }
+        };
+
+        writeStyleChar = function(which) {
+            writeTextChar(which);
+            $('#style-text').html(text);
+            return $('#style-tag').append(which);
+        };
+        writeStyles = function(message, index, interval) {
+            $("#animationSpeed").click(function () {
+                if(interval==time){
+                    interval=time*8;
+                    $(this).text('Normal-Animation');
+                }
+                else if(interval==time){
+                    interval=time*4;
+                    $(this).text('Fast-Animation');
+                }
+                else {
+                    interval=time*10;
+                    $(this).text('Slow-Animation');
+                }
+            });
+            if (index < len) {
+                if(!wait){
+                    $("#pause-resume").text('Resume-->');
+                    return setTimeout((function() {
+                        return writeStyles(message, index, interval);
+                    }), 0);
+                }else $("#pause-resume").text('Pause -->');
+
+                pre = $('#style-text')[0];
+                /*$('html,body').scrollTop = $('html,body').scrollHeight;*/
+                pre.scrollTop = pre.scrollHeight;
+                writeStyleChar(message[index++]);
+                return setTimeout((function() {
+                    return writeStyles(message, index, interval);
+                }), interval);
+            }else{
+                $("#header").empty();
+            }
+        };
+
+        writeTexts = function(message,index){
+            if (index < len) {
+                writeTextChar(message[index++]);
+                return writeTexts(message, index);
+            }else{
+                $('#style-text').html(text);
+                pre = $('#style-text')[0];
+                pre.scrollTop = pre.scrollHeight;
+                $("#header").empty();
+
+            }
+        };
+
+        $('body').append("<style id=\"style-tag\"></style>\n<span id=\"echo\"></span>\n<span id=\"heart\"><i></i></span>\n<pre id=\"style-text\"></pre>\n<div id='header'><a href='#' title='pause' id='pause-resume'style='color:#1192FF; font-size: 20px'>Pause --></a>|<a href='#' title='Skip Animation' id='skip-animation'style='color:#DC3130; font-size: 20px'>Skip Animation --></a>|<a href='#' title='Animation Speed' id='animationSpeed'style='color:#2aa198; font-size: 20px'>Normal Animation --></a></div>");
+
+        time = window.innerWidth <= 578 ? 4 : 16;
+
+        $("#pause-resume").click(function () {
+            wait=!wait;
+        });
+        writeStyles(styles, 0, time*2);
+        $("#skip-animation").click(function(event){
+            event.preventDefault();
+            writeStyles=function(){};
+            $("#style-tag").html(replaceKeyword(styles));
+            openComment = false;
+            writeTexts(styles,0);
+        });
+
+        $("#header").css({
+            "margin":"0",
+            "position":"fixed",
+            "top":$(document).height()-25+"px"
+        });
+
+        window.onresize=function (){
+            $("#header").css("top",$(document).height()-25+"px");
+        };
+
+    });
+
+
+</script>
+</body>
+</html>

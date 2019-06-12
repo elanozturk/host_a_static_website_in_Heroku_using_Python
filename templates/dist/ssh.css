@@ -1,0 +1,93 @@
+p#bw_websshaction {
+	text-align: right;
+	margin: 0;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+div#bw_websshframe {
+	border: 3px solid #CE4D00;
+	padding: 10px;
+	position: relative;
+}
+
+div#bw_websshframe iframe {
+	border: none;
+	background: #FFFFFF;
+	width: 100%;
+	height: 450px;
+}
+
+div.bw_websshwrapper_fullscreen {
+	position: fixed;
+	background: #FFFFFF;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 11300;
+}
+
+div#bw_offlinemessage {
+    height: 470px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div#bw_offlinemessage div#bw_offlinemessage_overlay {
+    background-color: #000000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    width: 100%;
+    height: 470px;
+    position; absolute;
+    top: 0;
+}
+
+div#bw_offlinemessage div#bw_offlinemessage_wrapper {
+    width: 60%;
+    height: 220px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 70px;
+    left: 20%;
+    padding: 20px;
+}
+
+div#bw_offlinemessage div#bw_offlinemessage_wrapper h2 {
+    font-size: 2.2em;
+    line-height: 1.2em;
+    font-weight: normal;
+    color: #ce4d00;
+    margin-top: 0;
+    border-bottom: 1px solid #ce4d00;
+    position: relative;
+}
+
+div#bw_offlinemessage div#bw_offlinemessage_wrapper h2 a {
+    position: absolute;
+    right: 0;
+    top: -10px;
+    font-size: 0.7em;
+}
+
+div#bw_offlinemessage div#bw_offlinemessage_wrapper p {
+    font-size: 1.6em;
+    color: #444444;
+}
+
+div#bw_offlinemessage div#bw_offlinemessage_wrapper p.bw_offlinemessage_error {
+    color: #000000;
+}
+
+.type-wrap{
+	margin:5px auto;
+	background: #FFFFFF;
+	max-width: 550px;
+	padding:15px;
+	background:@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500);
+;
+	border-radius:5px;
+}
